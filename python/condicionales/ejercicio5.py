@@ -3,20 +3,20 @@
 import os
 os.system("cls")
 
-numero = input("Ingrese el numero de 4 cifras: ")
+num = input("Ingrese el numero de 4 cifras: ")
 
-if len(numero) != 4:
+if len(num) != 4:
     print("El numero debe ser de 4 cifras")
 
 else:
-    cf_men = 10;
-    cf_may = 0;
+    cf_men = 10
+    cf_may = 0
 
-    for cifra in numero:
+    for cifra in num:
         if (int(cifra) < cf_men):
-            cf_men = int(cifra);
+            cf_men = int(cifra)
 
         elif (int(cifra) > cf_may):
-            cf_may = int(cifra);
+            cf_may = int(cifra)
     
-    print(f"El mayor número posible es: {str(cf_may)}{str(cf_men)}");
+    print(f"El mayor número posible es: {str(cf_may)}{str(cf_men)}")
